@@ -57,7 +57,8 @@ export default function Expertice() {
         </div>
       </div>
 
-      <div className="mt-[124px] max-w-[1034px] h-[366px] w-full absolute digital-transformation-card rounded-[40px] pt-[38px] px-[46px] pb-[52px]">
+      <div className="w-full flex justify-center">
+        <div className="mt-[124px] max-w-[1034px] h-[366px] w-full absolute digital-transformation-card rounded-[40px] pt-[38px] px-[46px] pb-[52px]">
         <h2 className="text-[45px] font-bold text-white max-w-[519px]">
           Start Your Digital Transformation Today
         </h2>
@@ -66,6 +67,7 @@ export default function Expertice() {
           automation to streamline operations and drive growth.
         </p>
         <Button type="primary" text="Get Started " className="mt-6" />
+      </div>
       </div>
     </div>
   );

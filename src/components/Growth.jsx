@@ -20,6 +20,7 @@ export default function Growth() {
     },
   ];
   return (
+    <div className="relative">
     <div className="mt-[100px] relative flex items-center pb-[100px] pl-[69px] pt-[62px] pr-[77px] rounded-[40px] justify-between primary-gradient">
       <div className="max-w-[611px]">
         <h2 className="text-[45px] font-bold text-white leading-[53px]">
@@ -35,14 +36,18 @@ export default function Growth() {
       <div>
         <Button text="Get started" type="parimary" className="text-white" />
       </div>
-      <div className="absolute w-[80%] justify-between  bottom-[-70px] flex">
+      
+    </div>
+    <div className="flex absolute  bottom-[-70px] w-full justify-center items-center">
+        <div className="w-[70%] justify-between gap-10  flex">
         {growthStatus.map((item) => (
           <div className="bg-white rounded-[15px] shadow-lg pt-[18px] px-[26px]">
             <h3 className="text-[45px] font-bold text-[#4B1D99]">{item.value}</h3>
             <hr />
-            <p className="text-base text-[#565454] leading-[53px]">{item.name}</p>
+            <p className="text-base text-[#565454] truncate leading-[53px]">{item.name}</p>
           </div>
         ))}
+      </div>
       </div>
     </div>
   );

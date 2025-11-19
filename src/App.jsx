@@ -76,12 +76,14 @@ function App() {
       </div>
       <div className="relative z-20 overflow-hidden ">
         <div className="primary-blur-div z-20 top-[-200px] left-[-100px]  absolute h-[384px] w-[200%]" />
-        <div className="relative z-20  pl-[122px] mt-[112px] pr-[124px]">
+        <div className="relative z-20  pl-[122px] pr-[124px]">
           {/* Services Section */}
-          <div className="flex flex-wrap ml-10 gap-[15px]">
+          <div className="w-full flex justify-center ">
+            <div className="grid grid-cols-3 gap-[15px]">
             {services.map((service) => (
               <Card service={service} />
             ))}
+          </div>
           </div>
 
           {/* who we are */}
@@ -94,7 +96,7 @@ function App() {
           <Support />
         </div>
         <div className="bg-[#7D30FF] pl-[122px] relative h-[1000px] pr-[124px]">
-          <div className="primary-blur-div z-20 top-[-200px] left-[-100px]  absolute h-[284px] w-[200%]" />
+          <div className="secondary-blur-div z-20 top-[-200px] left-[-100px]  absolute h-[284px] w-[200%]" />
 
           {/* our expertice */}
           <Expertice />

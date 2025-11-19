@@ -25,6 +25,10 @@ body {
   filter: blur(50px);
 }
 
+.secondary-blur-div {
+  background: linear-gradient(133.44deg, #4f31a6 34.47%, #7d30ff 90.92%);
+  filter: blur(50px);
+}
 .devtool-card {
   background: radial-gradient(
     218.15% 219.66% at 105.11% -10.83%,

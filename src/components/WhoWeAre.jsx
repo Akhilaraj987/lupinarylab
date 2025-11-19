@@ -39,7 +39,7 @@ export default function WhoWeAre() {
               </div>
             </div>
           </div>
-          <div>
+          <div className="flex justify-end">
             <div className="primary-radial-gradient relative w-[509px] h-[440px] rounded-[45px]">
               <img
                 src={innovation}

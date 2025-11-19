@@ -48,16 +48,17 @@ export default function DevTools() {
     },
   ];
   return (
-    <div className="rounded-[45px] max-w-[453px] max-h-[523px] grid grid-cols-3 devtool-card">
+    <div className="rounded-[45px] max-w-[453px] grid grid-cols-3 devtool-card p-[36px]">
       {devToolsList.map((item, index) => (
         <div
           key={index}
-          className="flex flex-col items-center justify-center p-6 m-4"
+          className="flex flex-col items-center justify-center gap-[18.6px] mt-4"
+
         >
-          <div className="p-5 rounded-[15px] devtool-item">
+          <div className="p-5 rounded-[15px] devtool-item max-w-[106px] max-h-[106px] ">
             <img src={item.logo} alt={item.name} width={68} height={68} />
           </div>
-          <p className="mt-4 text-white text-base font-semibold">{item.name}</p>
+          <p className="text-white text-base font-semibold">{item.name}</p>
         </div>
       ))}
     </div>
